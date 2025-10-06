@@ -4,7 +4,7 @@
 FROM node:22-alpine
 
 # Définir le répertoire de travail
-WORKDIR /gospot-sdk
+WORKDIR /gospot-sdk-host
 
 # Installer les dépendances nécessaires (bash, curl, etc.)
 RUN apk add --no-cache bash curl tar
