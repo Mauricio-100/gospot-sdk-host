@@ -22,3 +22,7 @@ RUN tar -xzvf /tmp/gospot-sdk-1.0.0.tar.gz -C /gospot-sdk \
 # Définir le point d'entrée pour exécuter le SDK ou un script
 WORKDIR /gospot-sdk
 CMD ["bash"]
+
+# à la fin de ton Dockerfile
+WORKDIR /gospot-sdk
+ENTRYPOINT ["/bin/bash"]
