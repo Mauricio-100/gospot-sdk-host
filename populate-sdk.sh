@@ -299,6 +299,8 @@ fi
 SH
 chmod 755 "$SDK_DIR/bin/server.sh"
 
+ensure_dir "$SDK_DIR/sdk/scripts"
+
 # create a sample client/server scripts (actual logic to implement later)
 cat > "$SDK_DIR/sdk/scripts/client.sh" <<'SH'
 #!/bin/sh
